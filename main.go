@@ -9,6 +9,9 @@ func main() {
 	//solutions.Day2Part1()
 	//solutions.Day2Part2()
 
-	solutions.Day3Part1()
-	solutions.Day3Part2()
+	//solutions.Day3Part1()
+	//solutions.Day3Part2()
+
+	solutions.Day4Part1()
+	solutions.Day4Part2()
 }
