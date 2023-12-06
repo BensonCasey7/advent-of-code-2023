@@ -1,4 +1,4 @@
-package solutions
+package day3
 
 import (
 	"bufio"
@@ -25,8 +25,8 @@ func NewEnginePart() EnginePart {
 	return enginePart
 }
 
-func Day3Part1() {
-	file, err := os.Open("solutions/Day3Input.txt")
+func Part1() {
+	file, err := os.Open("day3/Input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -104,8 +104,8 @@ func NewGear() Gear {
 	return gear
 }
 
-func Day3Part2() {
-	file, err := os.Open("solutions/Day3Input.txt")
+func Part2() {
+	file, err := os.Open("day3/Input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

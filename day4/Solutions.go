@@ -1,4 +1,4 @@
-package solutions
+package day4
 
 import (
 	"bufio"
@@ -22,8 +22,8 @@ func NewScratchCard() ScratchCard {
 	return scratchCard
 }
 
-func Day4Part1() {
-	file, err := os.Open("solutions/Day4Input.txt")
+func Part1() {
+	file, err := os.Open("day4/Input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -71,8 +71,8 @@ func calculateCardScore(scratchCard ScratchCard) int {
 	return score
 }
 
-func Day4Part2() {
-	file, err := os.Open("solutions/Day4Input.txt")
+func Part2() {
+	file, err := os.Open("day4/Input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

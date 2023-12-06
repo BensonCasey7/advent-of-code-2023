@@ -1,17 +1,19 @@
 package main
 
-import "advent-of-code-2023/solutions"
+import (
+	"advent-of-code-2023/day4"
+)
 
 func main() {
-	//solutions.Day1Part1()
-	//solutions.Day1Part2()
+	//day1.Part1()
+	//day1.Part2()
 
-	//solutions.Day2Part1()
-	//solutions.Day2Part2()
+	//day2.Part1()
+	//day2.Part2()
 
-	//solutions.Day3Part1()
-	//solutions.Day3Part2()
+	//day3.Part1()
+	//day3.Part2()
 
-	solutions.Day4Part1()
-	solutions.Day4Part2()
+	day4.Part1()
+	day4.Part2()
 }

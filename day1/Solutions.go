@@ -1,4 +1,4 @@
-package solutions
+package day1
 
 import (
 	"bufio"
@@ -8,16 +8,16 @@ import (
 	"strconv"
 )
 
-func Day1Part1() {
+func Part1() {
 	println("(Part 1) Sum of all numbers:", sumNumbers(false))
 }
 
-func Day1Part2() {
+func Part2() {
 	println("(Part 2) Sum of all numbers:", sumNumbers(true))
 }
 
 func sumNumbers(translateStrings bool) int {
-	file, err := os.Open("solutions/Day1Input.txt")
+	file, err := os.Open("day1/Input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -1,4 +1,4 @@
-package solutions
+package day2
 
 import (
 	"bufio"
@@ -23,7 +23,7 @@ func NewGame() Game {
 	return game
 }
 
-func Day2Part1() {
+func Part1() {
 	gameMaximums := calculateGameMaximums()
 
 	gameLimits := NewGame()
@@ -41,7 +41,7 @@ func Day2Part1() {
 
 	println("(Part 1) Sum of all game IDs:", validGameIdsSum)
 }
-func Day2Part2() {
+func Part2() {
 	gameMaximums := calculateGameMaximums()
 
 	gamePowerSums := 0
@@ -54,7 +54,7 @@ func Day2Part2() {
 }
 
 func calculateGameMaximums() []Game {
-	file, err := os.Open("solutions/Day2Input.txt")
+	file, err := os.Open("day2/Input.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return []Game{}
@@ -75,7 +75,7 @@ func calculateGameMaximums() []Game {
 	}
 
 	// Reopen the file to process each line
-	file, err = os.Open("solutions/Day2Input.txt")
+	file, err = os.Open("day2/Input.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return []Game{}
